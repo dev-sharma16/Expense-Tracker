@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a3bbc2f13b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Expense Tracker</title>
+  </head>
+  <body >
+    <div class="container">
+      <h3 class="flex">Expense Tracker</h3>
+      <div class="balanceStats flex">
+        <div class="currentBalance">
+          <p>Your Balance</p>
+          <p id="totalBalance">₹000.0</p>
+        </div>
+        <div class="IncExp flex">
+          <div class="income">
+            <p>Income</p>
+            <p id="income">+ ₹000.0</p>
+          </div>
+          <div class="expense">
+            <p>Expense</p>
+            <p id="expense">- ₹000.0</p>
+          </div>
+        </div>
+      </div>
+      <div class="formTr flex">
+        <form action="" id="addTransaction">
+        <h4>Add Transaction</h4>
+        <label for="description">Name :</label>
+        <input id="trDesc" type="text" name="description" placeholder="Enter Description" required>
+        <label for="category">Category :</label>
+        <input type="text" id="trCat" placeholder="Enetr Category" required>
+        <label for="amount">Amount :</label>
+        <input id="trAmt" type="number" name="amount" placeholder="Enter Amount" required>
+        <label for="date">Select Date :</label>
+        <input id="trDt" type="date" required>
+        <button id="addTr">Add Transaction</button>
+        </form>
+
+        <div class="transactionHistory flex" id="transactionList">
+        <h4>Transaction History</h3>
+        <p id="noTr">No Transactions..!</p>
+        <!-- <div class="transaction flex" id="trans"> -->
+            <!-- <div class="trNmCat flex">
+                <p id="trNm">Gym fees |</p>
+                <p id="trCat">| Gym</p>
+            </div>
+            <div class="trAmt flex">
+                <p id="trAmt">-₹1000</p>
+                <button id="deleteTr"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            </div> -->
+        <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  <script src="index.js"></script>  
+  </body>
+</html>
